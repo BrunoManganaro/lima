@@ -7,3 +7,23 @@ button {
     height: 50px;
     background-color: aquamarine;
 }
+
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: center;
+    /*flex-direction: column deixaria tudo empilhado bonitinho*/
+    align-items: center;
+    justify-content: center;
+    height: 275vh;
+    margin: 20px;
+}
+
+ul, ol, #lista, #lista2 {
+    text-align: left;
+}
+
+table {
+    color: purple;
+    border-radius: 5px;
+}

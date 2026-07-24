@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    text-align: center;
+}
+
+form {
+    color:aliceblue;
+}
+
+h1 {
+    color:goldenrod
+}
+
+h3 {
+    color:goldenrod
+}
+
+#rony {
+    margin-top: -4000px; 
+    margin-left: 67%; 
+    border: 5px double goldenrod; 
+    border-radius: 10px;
+}
+
+#socioRei {
+    margin-top: -100000px; 
+    margin-right: 68%; 
+    border: 5px double goldenrod; 
+    border-radius: 10px; 
+    width: 350px;
+}
+
+p {
+    color: aliceblue;
+}
+
+button {
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+}

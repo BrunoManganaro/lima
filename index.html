@@ -1,6 +1,7 @@
-<!DOCTYPE html> <!-- <exemplo> é chamado de tag -->
-<html lang="pt-br">
-<head> <!-- tag de abertura -->
+<!--<exemplo> é chamado de tag-->
+<!DOCTYPE html> <!--Identifica a versão 5 do html-->
+<html lang="pt-br"> <!--Declara que este trecho do arquivo representa um código html-->
+<head> <!--Declara informações sobre a página--> <!--tag de abertura--> 
     <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,24 +28,151 @@
 <body>
     <header>
         <h1 style="font-family: Griffy">Bem-vindo ao site!</h1>
+        <h2 style="font-family: Griffy">Título secundário</h2>
+        <h3 style="font-family: Griffy">Subtítulo</h3>
+        <h4 style="font-family: Griffy">Item</h4>
+        <h5 style="font-family: Griffy">Subitem</h5>
+        <h6 style="font-family: Griffy">Ponto</h6>
     </header>
 
     <main>
         <p style="font-family: Sixtyfour">
-            Este é um exemplo de uma página definido com o português do Brasil</p>
+            Este é um exemplo de uma página definido com o português do Brasil
+        </p>
         <p style="font-family: Sixtyfour" id="paragrafo">
-            Bora</p>
-        <p style="font-family: Creepster" id="demo">1</p>
+            Aura 🔥🔥🔥
+        </p>
+        <p style="font-family: Creepster" id="demo">
+            🥶
+        </p>
 
         <button style="font-family: Cherish" type="button" 
         onclick="document.getElementById('demo').innerText=
-        document.getElementById('demo').innerText+1">Botão</button>
+        document.getElementById('demo').innerText+'🥶'">Botão</button>
 
         <button style="font-family: Cherish" type="button" id="botao">
             67
-        </button>
+        </button><br>
 
-        <img src="https://th.bing.com/th/id/OIP.fSqdvFokgnZU6S6Qu2g6RwHaH3?w=154&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3">
+        <img id="img" src="https://th.bing.com/th/id/OIP.fSqdvFokgnZU6S6Qu2g6RwHaH3?w=154&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3">
+
+        <p>
+            <i>Yeah</i><br>
+            Bem-vindo ao <b>Minecraft</b>, aí meu amigo<br>
+            Na jornada desse game, ficará surpreendido<br>
+            Sinta liberdade para poder criar<br>
+            Apenas qualquer coisa que poder imaginar<br>
+        </p>  
+            Modo criativo ou sobrevivência<br>
+            Em uma aventura, tenha sua experiência<br>
+            Nem preciso dizer o que se pode ou não fazer<br>
+            Faça o que quiser e verá acontecer<br>
+        </p>      
+            Construindo e <u>minerando</u> sem nenhuma trajetória<br>
+            Sem ao menos perceber, vou fazendo minha história<br>
+            Neste <mark>universo</mark> realmente impressionante<br>
+            Explorando cavernas a procura de diamantes<br>
+
+            Combinando itens, construindo casas<br>
+            De dia ou de noite, fazendo minha jornada<br>
+            Modificações aumentam a diversidade<br>
+            E fica ainda mais legal com os amigos de verdade<br>
+        </p>    
+            <i>Yeah</i>, <strong>Minecraft</strong>, é<br>
+            Você conhece (conhece)<br>
+            Num mundo de blocos, faço qualquer criação<br>
+            Onde o único limite é a imaginação<br>
+            <em>(Yeah)</em><br>
+            <b>Minecraft</b>, é<br>
+            Você conhece<br>
+            Num mundo de blocos, faço qualquer criação<br>
+            Onde o único limite é a imaginação<br>
+            <i>Yeah</i><br>
+        </p>
+
+        <p>Este é um abre chevron &lt;</p>
+        <p>Este é um fecha chevron &gt;</p>
+        <!-- &; é usado para definir uma entidade html, como um chevron,
+         que normalmente não poderia ser escrito-->
+
+        <h2 id="lista">Minha Lista de Compras</h2>
+        <ul type="square"><!--Lista não ordenada, usada para itens sem ordem específica-->
+        <!--Você pode definir type como: square, circle, disc, ou nem adicioná-lo.-->
+            <!--Cada item da lista é definido pela tag <li>-->
+            <li>Urânio enriquecido</li>
+            <li>Aura</li>
+            <li>Goleiro Weverton</li>
+        </ul>
+
+        <h2 id="lista2">Passos para farmar aura 🥶</h2>
+        <ol><!--Lista ordenada com os passos simples para farmar aura-->
+            <!--Cada item é definido pela tag <li>-->
+            <li>Acordar</li>
+            <li>Assistir à rotina do Lucas Silva Okubo</li>
+            <li>Repetir tudo o que ele faz</li>    
+        </ol>
+
+        <ol start="7" reversed type="I">
+            <li style="color: yellow;">Item 6</li>
+            <li style="color: green">Item 7</li>
+        </ol>
+
+        <p>
+            <a 
+                href="https://www.youtube.com/channel/UCc5gPU-GOoiXnOgaliQjiYA"
+                target="_blank"
+                title="Não autoral"
+                rel="nofollow noopener" 
+            >
+            Outra mídia
+            </a>
+        </p>
+        <p>
+            <a 
+                href="https://www.imdb.com/pt/title/tt35945025/"
+                target="_blank" 
+                title="Mudou minha vida"
+                rel="nofollow noopener"
+            >
+            Masterpiece
+            </a>
+        </p>
+        <!--o noopener inidca que não foi você quem criou 
+        o que está sendo redirecionado-->
+
+        <p>
+            <a 
+            href="https://pt.wikipedia.org/wiki/Duende_Verde" 
+            target="_blank"
+            title="Aracnídeo"
+            rel="nofollow noopener"
+            >
+                <img 
+                src="./homem aranha.webp" 
+                height="80px" 
+                alt="Amigão da vizinhança"
+                title="Cabeça de teia"
+                >
+            </a>
+        </p>
+
+        <table border="1" cellspacing="2" cellpading="10" width="80%" align="center"><!--Elemento tabela-->
+            <tr><!--Elemento linha de tabela-->
+                <th>Nome</th><!--Nome das colunas-->
+                <th>Idade</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Tung Tung Tung Sahur</td><!--Informação anexada aos nomes das colunas-->
+                <td>67 anos</td>
+                <td>Santos FC</td>
+            </tr>
+            <tr>
+                <td>Homem-Aranha</td>
+                <td>Depende da mídia</td>
+                <td>Remo</td>
+            </tr>
+        </table>
     </main>
 
     <footer>

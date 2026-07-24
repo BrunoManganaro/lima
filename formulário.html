@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./67.jpg" type="image/jpg">
+    <title>Meu Formúlario</title>
+</head>
+<body style="background-color: black;">
+    <form id="meuFormulario" style="color: aliceblue;" 
+    action="https://webhook.site/a1487f94-959a-44a0-bfb0-904eae37c3aa" 
+    method="post">
+        <label for="nome">Nome:</label>
+        <input 
+            type="text" 
+            id="nome" 
+            name="nome" 
+            placeholder="Digite seu nome" 
+            required
+        >
+
+        <label for="e-mail">E-mail:</label>
+        <input
+            type="email" 
+            id="e-mail" 
+            name="email"
+            placeholder="e-mail@exemplo.com"
+            required
+        >
+        <!--id deve ser igual ao label-->
+
+        <label for="senha">Senha:</label>
+        <input
+            type="password" 
+            id="senha" 
+            name="senha"
+            placeholder="Digite sua senha"
+            minlength="8"
+            pattern="(?.*[a-z])(?.*[A-Z])(?.*\d)(?.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
+            required
+        >
+
+        <label for="idade">Idade:</label>
+        <input
+            type="number" 
+            id="idade" 
+            name="idade"
+            min="0"
+            max="120"
+            step="1"
+            value="0"
+            required
+        >
+
+        <button type="submit">Enviar</button>
+
+        <img src="./rony.webp" style="margin-top: 10%; margin-left: 43%; 
+        border: 5px double goldenrod; border-radius: 10px;">
+    </form>
+</body>
+</html>
