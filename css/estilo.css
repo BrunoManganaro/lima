@@ -1,0 +1,126 @@
+/* Estilização externa */
+
+body {
+    font-family: Verdana;
+    background-color: rgb(0,0,0);
+    color: #ffffe0;
+    margin: 0;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.25rem;
+    color: goldenrod;
+}
+
+p {
+    font-size: 75%;
+    line-height: 1.5;
+    
+}
+
+#rony {
+    transition: 0.3s ease; /*transição suave*/
+    width: 8%;
+    border: 5px double goldenrod;
+    border-radius: 5px;
+    position: fixed;
+    right: 75%;
+    top: 35%;
+}
+
+#rony:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+    transition: 0.3s ease; /*transição suave*/
+}
+
+.thaciano {
+    transition: 0.3s ease; /*transição suave*/
+    width: 9.5%;
+    position: fixed;
+    right: 16.5%;
+    top: 35%;
+    border: 5px double goldenrod;
+    border-radius: 5px;
+}
+
+#foxy {
+    height: 25%;
+    opacity: 0;
+}
+
+#thaci:hover {
+    transition: 0.3s ease; /*transição suave*/
+    transform: scale(1.2);
+    opacity: 0;
+}
+
+#foxy:hover {
+    transition: 0.3s ease; /*transição suave*/
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+#baleia {
+    width: 8%;
+    position: fixed;
+    right: 0%;
+    top: 85%;
+}
+
+.lorem {
+    color: cyan;
+    text-align: center;
+}
+/* .exemplo é uma classe */
+
+#lorem1 {
+    position: fixed;
+    top: 20%;
+    right: 23%;
+}
+
+#lorem2 {
+    position: fixed;
+    top: 70%;
+    right: 12%;
+}
+
+#lorem3 {
+    position: fixed;
+    top: 75%;
+    right: 3%;
+    
+}
+/* #exemplo é um id */    
+
+.conteudo {
+    width: auto;
+    height: auto; /*vw serve como uma porcentagem do viewport*/
+    position: fixed;
+    right: 26%;
+    top: 45%
+}
+
+.textos {
+    width: 30%;
+    height: auto;
+    position: fixed;
+    right: 35%;
+    top: 40%
+}
+
+#botao {
+    transition: 0.3s ease; /*transição suave*/
+    text-align: center;
+    position: fixed;
+    left: 47%;
+}
+
+#botao:hover {
+    transition: 0.3s ease; /*transição suave*/
+    color: aliceblue;
+    background-color: goldenrod;
+}

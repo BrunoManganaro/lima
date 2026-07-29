@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./rony.webp" type="image/webp">
+    <!--viewport é toda a área visível do site-->
+    <title>Estudo de CSS 🥶</title>
+    <!--rel="preload" manda a página esperar o css antes de carregar-->
+    <!--Outra opção é usar uma estilização interna 
+    simples para esperar carregar-->
+    <link rel="preload" href="./estilo.css" as="style" 
+    onload="this.rel='stylesheet'">
+    <!--Estilização interna-->
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: black;
+        }
+
+        h1 {
+            color: aliceblue;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Courier New';
+        }
+
+        p {
+            color: aliceblue;
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="textos">
+        <h1 id="titulo">Bem-vindo ao Estilo Interno</h1>
+
+        <p id="paragrafo1">Este parágrafo utiliza estilos definidos na tag &lt;style&gt;.</p>
+        <!--Estilização em linha-->
+        <p style="color: goldenrod; text-align: center;" id="paragrafo2">
+            Este texto está estilizado em linha
+        </p>
+        <button type="button" id="botao">clique aqui</button>
+    </div>
+
+    <div class="conteudo">
+        <h1 class="lorem" id="lorem1">
+            Lorem ipsum You can earn the Freeze Badge at Icirrus Gym. 
+        </h1>
+        <p class="lorem" id="lorem2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Curabitur eget magna consequat nunc gravida placerat.
+            Phasellus posuere metus efficitur, 
+            sollicitudin felis et, pulvinar ligula.
+        </p>
+        <p class="lorem" id="lorem3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Curabitur eget magna consequat nunc gravida placerat.
+            Phasellus posuere metus efficitur, 
+            sollicitudin felis et, pulvinar ligula. 
+            Donec at tortor vitae orci suscipit aliquam.
+        </p>
+    </div>
+
+    <img src="./rony.webp" id="rony">
+    <img src="./thacithanos.webp" class="thaciano" id="thaci">
+    <img src="./gif.webp" class="thaciano" id="foxy">
+    <img src="./baleiao.webp" id="baleia">
+</body>
+</html>
