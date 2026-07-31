@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade Position</title>
+    <style>
+        body {
+            background-color: black;
+            color: aliceblue;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        div.static {
+            position: static;
+            border: 3px solid rgb(99, 99, 0)
+        }
+        div.relative {
+            position: relative;
+            border: 3px solid rgb(99, 99, 0);
+            left: 30px;
+            width: 400px;
+            height: 200px;
+        }
+        div.fixed {
+            position: fixed;
+            border: 3px solid rgb(99, 99, 0);
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            height: 200px;
+            background-image: url(rony.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        div.absolute {
+            position: absolute;
+            border: 3px solid rgb(99, 99, 0);
+            right: 0;
+            top: 80px;
+            width: 200px;
+            height: 100px;
+        }
+        div.sticky {
+            position: sticky;
+            border: 3px solid rgb(99, 99, 0);
+            padding: 5px;
+            top: 20px;
+            bottom: 20px;
+            background-image: url(gugu.webp);
+            z-index: 100; /*Define a camada onde o elemento se encontra*/
+        }
+    </style>
+</head>
+<body>
+    <p>A propridade position do CSS pode assumir os seguintes valores:</p>
+    <ul>
+        <li>
+            static - Este é o valor padrão. 
+            O elemento é posicionado de acordo com o fluxo normal do documento
+        </li>
+        <li>
+            relative - O elemento é posicionado em relação à sua posição no
+            fluxo normal do documento.
+        </li>
+        <li>
+            fixed - O elemento é posicionado em relação ao viewport.
+        </li>
+        <li>
+            absolute - O elemento é posicionado em relação 
+            ao ancestral mais próximo.                
+        </li>
+        <li>
+            sticky - O elemento varia entre relative e fixed dependendo
+            da posição da rolagem.
+        </li>
+    </ul>
+
+    <p>
+        A posição dos elementos é definida pelas propriedades
+        top, bottom, left e right.
+    </p>
+    <p style="color:brown">
+        Lorem ipsum, dolor sit 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, suscipit?amet consectetur adipisicing elit. Impedit accusantium nihil doloremque libero excepturi odit asperiores iusto velit! Dignissimos molestias saepe natus ad sequi rerum provident praesentium non corrupti mollitia.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi libero fugiat, aperiam optio quis maiores. Perferendis nostrum ipsum illo voluptates libero deleniti fuga velit dicta temporibus, vitae maxime eveniet quibusdam?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, vel facere in ex libero vitae et iste aut, laborum nostrum voluptatem fuga optio voluptatibus nobis at sequi quia odio omnis!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorem excepturi at magni reprehenderit, sapiente minus aliquid praesentium error laboriosam amet recusandae impedit omnis nemo ab harum inventore, neque voluptatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure tempora architecto asperiores sed optio, unde expedita amet quidem error nesciunt eveniet nulla, at iste quos vel pariatur ad non in.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, laboriosam sequi maxime quos asperiores cum distinctio consectetur dolorem molestiae, consequatur animi adipisci cupiditate accusantium ut sed, aliquid numquam beatae laborum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt explicabo ab ipsa doloribus animi placeat dolorem, dolores odit hic voluptate omnis earum quisquam nulla corrupti fuga laboriosam ratione libero et?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quasi animi vel aliquam nemo, sint rerum veniam dignissimos necessitatibus pariatur culpa adipisci possimus officia commodi neque repellat ipsum magni quis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsam quasi voluptatibus culpa, dicta suscipit natus ad earum harum vel nam enim totam doloremque architecto. Exercitationem ea tempore quas illo.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium repudiandae at consequuntur quos quo minus, reiciendis molestias sint, recusandae provident iusto. Eveniet, ad labore? Ipsum mollitia asperiores odio eius voluptates.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus rerum labore optio error incidunt quidem veniam sint, corporis, reiciendis dolores esse dolorem molestiae saepe, nemo cum nesciunt! Porro, in laudantium?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quam amet incidunt, sapiente cumque saepe ducimus numquam nobis. Sunt labore deleniti itaque quidem reiciendis dolores consectetur ut nulla pariatur impedit!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita nisi sint adipisci vero fugit totam autem libero. Fuga quae atque molestiae deleniti vel, ut eius optio doloremque voluptatum a animi!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos eius earum culpa ipsum a corporis aspernatur numquam nemo assumenda, quis reprehenderit quod at recusandae reiciendis facilis natus placeat ut similique.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima, quisquam aut placeat totam optio cumque expedita aliquam perferendis, eligendi tempora possimus fugiat neque voluptatibus libero impedit, minus deserunt? Commodi?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit non ratione itaque quos veniam modi alias unde nisi. Provident veritatis neque magni eligendi inventore numquam dignissimos dolore asperiores consectetur cupiditate?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis rem assumenda molestias itaque doloribus inventore animi iure? Velit mollitia nisi quos consequatur asperiores saepe, enim aliquam iste quibusdam doloremque architecto?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex exercitationem reprehenderit sint nostrum a illum, porro accusamus quia, veritatis ad beatae nihil eum sed dolores delectus excepturi corporis totam dignissimos?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad harum sed quaerat, quo, delectus ex aliquid rerum accusantium doloremque ab quos facere laudantium nostrum hic sit sapiente iure dignissimos voluptatibus!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel odio exercitationem alias. Sunt earum explicabo placeat modi illum, sit nesciunt esse odio asperiores, incidunt molestias labore. Dolorum sapiente labore aut.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam amet ex illum facere ut nihil accusamus vitae cum magni reiciendis nesciunt ad pariatur, asperiores eligendi iure qui adipisci architecto molestias?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dicta, ipsum quia voluptate libero fuga! Aliquam eaque, modi, voluptatem ad unde quis veniam exercitationem minima impedit quibusdam hic omnis quaerat!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio repellat nam exercitationem fugit minus vitae impedit nulla, similique reprehenderit soluta animi. Alias libero, amet molestiae tenetur veniam laboriosam rem. Exercitationem.
+    </p>
+    <div class="sticky">
+        Minha posição é grudenta;
+    </diV>
+    <div class="static">
+        Este elemento div tem position: static;
+    </div>
+    <div class="relative">
+        Este elemento div tem position: relative; ou seja está posicionado em
+        relação à própria posição inicial.
+        <div class="absolute">
+            Este elemento div tem position: absolute; o que significa que ele é 
+            posicionado em relação ao ancestral POSICIONADO mais próximo.
+        </div>
+    </div>
+    <div class="fixed">
+        Este elemento div tem position: fixed; o que o posiciona em relação ao viewport
+    </div>
+    <p style="color:brown">
+        Lorem ipsum, dolor sit 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, suscipit?amet consectetur adipisicing elit. Impedit accusantium nihil doloremque libero excepturi odit asperiores iusto velit! Dignissimos molestias saepe natus ad sequi rerum provident praesentium non corrupti mollitia.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi libero fugiat, aperiam optio quis maiores. Perferendis nostrum ipsum illo voluptates libero deleniti fuga velit dicta temporibus, vitae maxime eveniet quibusdam?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, vel facere in ex libero vitae et iste aut, laborum nostrum voluptatem fuga optio voluptatibus nobis at sequi quia odio omnis!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorem excepturi at magni reprehenderit, sapiente minus aliquid praesentium error laboriosam amet recusandae impedit omnis nemo ab harum inventore, neque voluptatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure tempora architecto asperiores sed optio, unde expedita amet quidem error nesciunt eveniet nulla, at iste quos vel pariatur ad non in.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, laboriosam sequi maxime quos asperiores cum distinctio consectetur dolorem molestiae, consequatur animi adipisci cupiditate accusantium ut sed, aliquid numquam beatae laborum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt explicabo ab ipsa doloribus animi placeat dolorem, dolores odit hic voluptate omnis earum quisquam nulla corrupti fuga laboriosam ratione libero et?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quasi animi vel aliquam nemo, sint rerum veniam dignissimos necessitatibus pariatur culpa adipisci possimus officia commodi neque repellat ipsum magni quis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsam quasi voluptatibus culpa, dicta suscipit natus ad earum harum vel nam enim totam doloremque architecto. Exercitationem ea tempore quas illo.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium repudiandae at consequuntur quos quo minus, reiciendis molestias sint, recusandae provident iusto. Eveniet, ad labore? Ipsum mollitia asperiores odio eius voluptates.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus rerum labore optio error incidunt quidem veniam sint, corporis, reiciendis dolores esse dolorem molestiae saepe, nemo cum nesciunt! Porro, in laudantium?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quam amet incidunt, sapiente cumque saepe ducimus numquam nobis. Sunt labore deleniti itaque quidem reiciendis dolores consectetur ut nulla pariatur impedit!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita nisi sint adipisci vero fugit totam autem libero. Fuga quae atque molestiae deleniti vel, ut eius optio doloremque voluptatum a animi!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos eius earum culpa ipsum a corporis aspernatur numquam nemo assumenda, quis reprehenderit quod at recusandae reiciendis facilis natus placeat ut similique.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima, quisquam aut placeat totam optio cumque expedita aliquam perferendis, eligendi tempora possimus fugiat neque voluptatibus libero impedit, minus deserunt? Commodi?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit non ratione itaque quos veniam modi alias unde nisi. Provident veritatis neque magni eligendi inventore numquam dignissimos dolore asperiores consectetur cupiditate?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis rem assumenda molestias itaque doloribus inventore animi iure? Velit mollitia nisi quos consequatur asperiores saepe, enim aliquam iste quibusdam doloremque architecto?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex exercitationem reprehenderit sint nostrum a illum, porro accusamus quia, veritatis ad beatae nihil eum sed dolores delectus excepturi corporis totam dignissimos?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad harum sed quaerat, quo, delectus ex aliquid rerum accusantium doloremque ab quos facere laudantium nostrum hic sit sapiente iure dignissimos voluptatibus!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel odio exercitationem alias. Sunt earum explicabo placeat modi illum, sit nesciunt esse odio asperiores, incidunt molestias labore. Dolorum sapiente labore aut.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam amet ex illum facere ut nihil accusamus vitae cum magni reiciendis nesciunt ad pariatur, asperiores eligendi iure qui adipisci architecto molestias?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dicta, ipsum quia voluptate libero fuga! Aliquam eaque, modi, voluptatem ad unde quis veniam exercitationem minima impedit quibusdam hic omnis quaerat!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio repellat nam exercitationem fugit minus vitae impedit nulla, similique reprehenderit soluta animi. Alias libero, amet molestiae tenetur veniam laboriosam rem. Exercitationem.
+    </p>
+    
+</body>
+</html>

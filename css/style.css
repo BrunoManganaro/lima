@@ -38,11 +38,28 @@ body {
     box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.4)
 }
 
-button {
-    transition: 0.7s ease;
+.btn {
+    background-color: rgb(194, 214, 220);
+    transition: background-color 0.6s ease;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer /* O cursor do mouse vira uma "mãozionha" com o dedo indicador esticado */
 }
 
-button:hover {
-    background-color:rgb(50,50,20);
+.btn:hover {
+    background-color:rgb(43, 43, 36);
     color: aliceblue;
+}
+
+.card h2 {
+    color: rgb(190, 190, 190); 
+    margin-bottom: 10px; /*Adiciona uma margem inferior de 10 px ao título*/
+}
+
+.card p {
+    color: rgb(220, 220, 220);
+    font-size: 14px;
+    margin-bottom: 10px;
 }
