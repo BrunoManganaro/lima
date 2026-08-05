@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <style>
+        .container{
+            display: flex;
+            flex-flow: row wrap;        
+            justify-content: space-evenly;
+            /*space-around leva em conta o espaço entre os elentos, enquanto
+            o space-between joga as duas extremidades nos cantos da página e
+            separa o resto dos espaços*/
+            align-items: center;
+            align-content: flex-start;
+            background-color: cornflowerblue;
+            height: 400px;
+        }
+        .container div{
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            font-size: 30px;
+            transition: 0.3s ease;
+        }
+        .container div:hover {
+            background-color: #b1b1b1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex</h1>
+    <p>
+        Para usar o flex é necessário haver um elemento ancestral com 
+        estilização display: flex
+    </p>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+</html>
