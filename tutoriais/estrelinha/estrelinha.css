@@ -1,0 +1,27 @@
+body {
+    height: 100vh;
+    overflow: hidden; 
+    /*overflow diz pro computador o que fazer 
+    caso um elemento sobreponha outro*/
+    background-color: rgb(26, 26, 26);
+}
+.estrelinha {
+    position: fixed;
+    color: silver;
+    text-shadow: 0 0 6px #ffeb3b, 0 0 10px #f6fa0c88, 0 0 20px #ffd9004e;
+    pointer-events: none;
+    font-size: 14px;
+    content: "&#10022;";
+    animation: caiEDesvanece 800ms ease-out forwards;
+}
+
+@keyframes caiEDesvanece{
+    0%{
+        opacity: 1;
+        transform: translate(0,0) scale(1) rotate(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translate(var(--xAleatorio), 40px) scale(0.3) rotate(45deg);
+    }
+}
