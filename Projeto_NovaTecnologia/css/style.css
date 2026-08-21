@@ -58,19 +58,19 @@ header nav ul li a{
     color: #faf6f6;
 }
 /*Seção do carrosel de imagens e informação*/
-.carousel {
+.carousel{
     position: relative;
     max-width: 100%;
     margin-top: 50px;
     align-items: center;
     overflow: hidden; /*Garante que apenas um item seja visível*/
 } 
-.carousel-container {
+.carousel-container{
     display: flex;
     align-items: center;
     transition: transform 1s ease-in-out;
 }
-.carousel-item {
+.carousel-item{
     min-width: 100%;
     display: flex;
     justify-content: center;
@@ -81,7 +81,7 @@ header nav ul li a{
 }
 .carousel-item img { 
     max-width: 100%;
-    height: auto;
+    height: 20vw;
     margin-right: 1px;
     border-radius: 8px;
 }
@@ -97,10 +97,13 @@ header nav ul li a{
     cursor: pointer;
     padding: 10px;
 }
-.carousel-btn.prev {
+.carousel-btn:hover {
+    background-color: #3c80c9;
+}
+.carousel-btn.prev{
     left: 10px;
 }
-.carousel-btn.next {
+.carousel-btn.next{
     right: 10px;
 }
 /*Seção de serviços*/
@@ -187,6 +190,7 @@ footer {
 }
 img {
     max-width: 100%;
+    max-height: 60%;
 }
 /*Responsividade para telas menores*/
 @media (max-width: 768px){
@@ -197,7 +201,6 @@ img {
     }
     .carousel-item img {
         margin-bottom: 20px;
-        max-width: 90%;
     }
 }
 /*Menu responsivo*/
@@ -213,18 +216,35 @@ img {
     .menu-toggle {
         display: block;
     }
+    /*Esconde o menu por padrão e exibe quando ativado*/
+    .menu {
+        display: none;
+        flex-direction: column;
+        background: #005a8d;
+        width: 100%;
+        text-align: center;
+    }
+    .menu.show {
+        display: flex;       
+    }
+    .menu li {
+        padding: 10px;
+    }
+    .carousel-item img { 
+        max-width: 100%;
+        height: 30vw;
+        margin-right: 1px;
+        border-radius: 8px;
+    }
 }
-/*Esconde o menu por padrão e exibe quando ativado*/
-.menu {
-    display: none;
-    flex-direction: column;
-    background: #005a8d;
+.menu li a {
+    transition: 0.3s ease;
+}
+.menu li a:hover {
+    color: rgb(220, 220, 220);
+}
+.content-item img{
     width: 100%;
-    text-align: center;
-}
-.menu.show {
-    display: flex;       
-}
-.menu li {
-    padding: 10px;
+    height: 100%;
+    max-height: 100%;
 }
