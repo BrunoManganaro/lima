@@ -7,11 +7,78 @@
     <link rel="stylesheet" href="darkMode.css">
     <style>
         :root{
-            --primary-color
+            --primary-color:  #f0eded;
+            --secondary-color: #a51b00;
+            --primary-text: #333;
+            --secondary-text: #fff;
+        }
+        body{
+            background: var(--primary-color);
+            color: var(--primary-text);
         }
     </style>
 </head>
 <body>
-    
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo do site">
+        </div>
+        <div class="name">
+            <h1>Site Teste</h1>
+        </div>
+        <div class="theme-button">
+            <button>
+                <img src="images/darkSwitch.png" id="moon" class="themeToggle">
+            </button>
+            <img src="images/lightSwitch.png" id="sun" class="themeToggle">
+        </div>
+    </header>
+    <section class="text-space">
+        <h2>Exemplos de Cartões</h2>
+        <div class="cards-list">
+            <article class="card">
+                <h3>Balela 1</h3>
+                <p>
+                    Lorem Ipsum pikachu evolves 
+                    with the use of the thunder stone.
+                    Lorem Ipsum pikachu evolves 
+                    with the use of the thunder stone.
+                    Lorem Ipsum pikachu evolves 
+                    with the use of the thunder stone.
+                    Lorem Ipsum pikachu evolves 
+                    with the use of the thunder stone.
+                </p>
+            </article>
+            <article class="card">
+                <h3>Balela 2</h3>
+                <p>
+                    Lorem Ipsum charmander evolves at level 16.
+                    Lorem Ipsum charmander evolves at level 16.
+                    Lorem Ipsum charmander evolves at level 16.
+                    Lorem Ipsum charmander evolves at level 16.
+                    Lorem Ipsum charmander evolves at level 16.
+                </p>
+            </article>
+            <article class="card">
+                <h3>Balela 3</h3>
+                <p>
+                    Lorem Ipsum charmeleon evolves at level 36.
+                    Lorem Ipsum charmeleon evolves at level 36.
+                    Lorem Ipsum charmeleon evolves at level 36.
+                    Lorem Ipsum charmeleon evolves at level 36.
+                </p>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <p>Agradecimentos especiais ao Senai 👍🔥</p>
+    </footer>
+    <script>
+        const themeToggle = document.getElementsByClassName("themeToggle");
+        themeToggle.addEventListener("click", () => {
+            document.body.dataset.theme = 
+            document.body.dataset.theme === "dark" ? "" : "dark";
+        })
+    </script>
 </body>
 </html>
